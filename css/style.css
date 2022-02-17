@@ -3,7 +3,7 @@
 Base setting
 =============================================== */
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
   font-size: 62.5%;
   color: #6E7189;
   font-weight: 400;
@@ -149,6 +149,7 @@ Fontsize-setting
 }
 .kv__copy__text {
   text-align: center;
+  text-shadow: 0px 0px 6px #193660;
   color: white;
 }
 
