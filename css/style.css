@@ -587,7 +587,7 @@ color:g.$color-gray-dark;
 .button__big--design::after, .button__big--illustrations::after {
   position: absolute;
   content: "";
-  font-family: "Material Icons";
+  font-family: "Material Icons Sharp";
   line-height: 1;
   top: 50%;
   left: 3rem;
@@ -644,15 +644,6 @@ color:g.$color-gray-dark;
 .button__big:hover::after {
   color: white;
   opacity: 0.8;
-}
-
-/* footer button for safari */
-_::-webkit-full-page-media, _:future, :root .button__big--design::after {
-  content: "";
-}
-
-_::-webkit-full-page-media, _:future, :root .button__big--illustrations::after {
-  content: "";
 }
 
 /* label-category
