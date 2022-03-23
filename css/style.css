@@ -595,10 +595,10 @@ color:g.$color-gray-dark;
   color: #afafaf;
 }
 .button__big--design::after {
-  content: "brush";
+  content: "\e3ae";
 }
 .button__big--illustrations::after {
-  content: "palette";
+  content: "\e40a";
 }
 .button a {
   display: block;
@@ -644,6 +644,15 @@ color:g.$color-gray-dark;
 .button__big:hover::after {
   color: white;
   opacity: 0.8;
+}
+
+/* footer button for safari */
+_::-webkit-full-page-media, _:future, :root .button__big--design::after {
+  content: "";
+}
+
+_::-webkit-full-page-media, _:future, :root .button__big--illustrations::after {
+  content: "";
 }
 
 /* label-category
