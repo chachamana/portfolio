@@ -972,6 +972,11 @@ color:g.$color-gray-dark;
   position: absolute;
   width: 100%;
 }
+@-moz-document url-prefix() {
+  .bg__skew::after {
+    background-size: 100% 100%;
+  }
+}
 
 .bg__skew--top {
   overflow: hidden;
@@ -991,6 +996,11 @@ color:g.$color-gray-dark;
   height: 100px;
   position: absolute;
   width: 100%;
+}
+@-moz-document url-prefix() {
+  .bg__skew--top::before {
+    background-size: 100% 100%;
+  }
 }
 
 /* backgraound small triangle
