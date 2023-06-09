@@ -11,8 +11,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  /* basic size 16px */
+body { /* basic size 16px */
   line-height: 1.5;
   letter-spacing: 0.05em;
   font-size: 1.6rem;
@@ -176,8 +175,7 @@ Fontsize-setting
   color: #ffa1ae;
 }
 .heading-secondary {
-  margin-bottom: 15px;
-  margin-bottom: 2.4rem;
+  margin-bottom: 20px;
   font-weight: 700;
   color: #ffa1ae;
   line-height: 1.1;
@@ -221,6 +219,17 @@ Utilities
 }
 @media screen and (max-width: 600px) {
   .u-sponly {
+    display: block;
+  }
+}
+
+/* tablet-only
+----------------------- */
+.u-tabonly {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .u-tabonly {
     display: block;
   }
 }
@@ -405,23 +414,9 @@ Footer
 
 /* animation
 ----------------------- */
-@-webkit-keyframes fadeIn {
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes fadeIn {
   100% {
     opacity: 1;
-  }
-}
-@-webkit-keyframes slideInDown {
-  0% {
-    visibility: visible;
-    transform: translate(0, -100%);
-  }
-  to {
-    transform: translate(0, 0);
   }
 }
 @keyframes slideInDown {
@@ -433,17 +428,6 @@ Footer
     transform: translate(0, 0);
   }
 }
-@-webkit-keyframes slideInUp {
-  0% {
-    visibility: visible;
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(0, -100%);
-    opacity: 0;
-  }
-}
 @keyframes slideInUp {
   0% {
     visibility: visible;
@@ -453,14 +437,6 @@ Footer
   100% {
     transform: translate(0, -100%);
     opacity: 0;
-  }
-}
-@-webkit-keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(45deg);
   }
 }
 @keyframes rotation {
@@ -632,7 +608,7 @@ color:g.$color-gray-dark;
   height: 380px;
 }
 .button:hover span {
-  color: #f0f5ff;
+  color: hsl(221, 100%, 97%);
 }
 .button:hover::before {
   opacity: 1;
@@ -683,8 +659,7 @@ color:g.$color-gray-dark;
 .nav__toggle__area {
   display: block;
   position: relative;
-  transition: all 0.6s;
-  /*アニメーションの設定*/
+  transition: all 0.6s; /*アニメーションの設定*/
   width: 100%;
   height: 100%;
 }
@@ -871,8 +846,7 @@ color:g.$color-gray-dark;
 }
 .kv__illustration {
   max-width: 120px;
-  -webkit-animation: rotation 1.5s linear infinite alternate;
-          animation: rotation 1.5s linear infinite alternate;
+  animation: rotation 1.5s linear infinite alternate;
 }
 .kv__scroll {
   position: absolute;
@@ -891,8 +865,7 @@ color:g.$color-gray-dark;
   text-transform: uppercase;
   color: #8EAAD1;
   font-size: 1.2rem;
-  -ms-writing-mode: tb-lr;
-      writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
 }
 @media screen and (max-width: 768px) {
   .kv__scroll {
@@ -906,32 +879,12 @@ color:g.$color-gray-dark;
   width: 1px;
   height: 80px;
   content: "";
-  -webkit-animation: scrollDownLine 1.5s cubic-bezier(1, 0, 0, 1) infinite;
-          animation: scrollDownLine 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+  animation: scrollDownLine 1.5s cubic-bezier(1, 0, 0, 1) infinite;
   background: #8EAAD1;
 }
 @media screen and (max-width: 768px) {
   .kv__scroll::after {
     height: 50px;
-  }
-}
-
-@-webkit-keyframes scrollDownLine {
-  0% {
-    transform: scale(1, 0);
-    transform-origin: 0 0;
-  }
-  50% {
-    transform: scale(1, 1);
-    transform-origin: 0 0;
-  }
-  50.1% {
-    transform: scale(1, 1);
-    transform-origin: 0 100%;
-  }
-  100% {
-    transform: scale(1, 0);
-    transform-origin: 0 100%;
   }
 }
 
@@ -955,17 +908,18 @@ color:g.$color-gray-dark;
 }
 /* backgraound skew-image
 ----------------------- */
-.bg__skew {
+.bg__skew--bottom, .kv__skew--bottom {
   overflow: hidden;
   position: relative;
 }
-.bg__skew::after {
+.bg__skew--bottom::after, .kv__skew--bottom::after {
   bottom: 0px;
   left: 0;
   z-index: 10;
 }
-.bg__skew::after {
-  background-image: url(../image/img_bg_triangle.svg);
+.bg__skew--bottom::after, .kv__skew--bottom::after {
+  mask: url("../image/img_bg_triangle.svg") no-repeat center/contain;
+  -webkit-mask: url("../image/img_bg_triangle.svg") no-repeat center/contain;
   content: "";
   display: block;
   height: 100px;
@@ -973,9 +927,17 @@ color:g.$color-gray-dark;
   width: 100%;
 }
 @-moz-document url-prefix() {
-  .bg__skew::after {
-    background-size: 100% 100%;
+  .bg__skew--bottom::after, .kv__skew--bottom::after {
+    mask-size: 100% 100%;
   }
+}
+
+.bg__skew--bottom::after {
+  background-color: #fff;
+}
+
+.kv__skew--bottom::after {
+  background-color: #FFF8F9;
 }
 
 .bg__skew--top {
@@ -990,7 +952,9 @@ color:g.$color-gray-dark;
   transform: rotate(180deg);
 }
 .bg__skew--top::before {
-  background-image: url(../image/img_bg_triangle.svg);
+  background-color: #fff;
+  mask: url("../image/img_bg_triangle.svg") no-repeat center/contain;
+  -webkit-mask: url("../image/img_bg_triangle.svg") no-repeat center/contain;
   content: "";
   display: block;
   height: 100px;
@@ -999,7 +963,7 @@ color:g.$color-gray-dark;
 }
 @-moz-document url-prefix() {
   .bg__skew--top::before {
-    background-size: 100% 100%;
+    mask-size: 100% 100%;
   }
 }
 
@@ -1035,25 +999,87 @@ color:g.$color-gray-dark;
 ----------------------- */
 #particles-js {
   position: absolute;
-  z-index: -1;
-  /*描画を一番下に*/
+  z-index: -1; /*描画を一番下に*/
   width: 100%;
   height: 100%;
-  background-color: #193660;
-  /*背景色*/
+  background-color: #193660; /*背景色*/
 }
 
 #particles-js__wrapper {
-  position: relative;
-  /*描画を#particles-jsよりも上にするためposition:relative;を指定*/
-  z-index: 100;
-  /*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+  position: relative; /*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+  z-index: 100; /*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+
+/* portfolio
+----------------------- */
+.app {
+  background-color: #FFF8F9;
+  /* &__explanation{
+     display: flex;
+     flex-direction: column;
+     flex: 1;
+   }*/
+}
+.app__wrapper {
+  display: flex;
+  gap: 30px;
+}
+@media screen and (max-width: 600px) {
+  .app__wrapper {
+    flex-direction: column;
+  }
+}
+.app__title {
+  margin-bottom: 30px;
+}
+.app__eachtitle {
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .app__eachtitle {
+    text-align: center;
+  }
+}
+.app__contents {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 600px) {
+  .app__contents {
+    margin-bottom: 20px;
+    flex-direction: column-reverse;
+    align-items: initial;
+  }
+  .app__contents:last-of-type {
+    margin-bottom: 50px;
+  }
+}
+.app__text {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .app__text {
+    text-align: center;
+  }
+}
+.app__image {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 600px) {
+  .app__image {
+    width: 50%;
+    max-width: 400px;
+    margin-bottom: 0px;
+  }
 }
 
 /* portfolio

@@ -6,13 +6,10 @@
     <meta name="description" content="Website gallery-developement" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/reset.min.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sacramento&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -20,8 +17,7 @@
     <header class="header" id="header">
       <div class="l-inner header__wrapper">
         <h1 class="header__start">
-          <a href="#" class="title">Web Gallery <span class="title__sub">-development</span>
-          </a>
+          <a href="#" class="title">Web Gallery <span class="title__sub">-development</span> </a>
         </h1>
         <div class="header__middle">
           <nav class="nav">
@@ -34,85 +30,120 @@
             </button>
             <ul class="nav__wrapper">
               <li class="nav__item">
-                <a href="#gallery01"
-                  ><span class="nav__item__opt u-text-small">Gallery</span
-                  >01</a
-                >
+                <a href="#app"><span class="nav__item__opt u-text-small">App</span>01</a>
               </li>
               <li class="nav__item">
-                <a href="#gallery02"
-                  ><span class="nav__item__opt u-text-small">Gallery</span
-                  >02</a
-                >
+                <a href="#website01"><span class="nav__item__opt u-text-small">Website</span>01</a>
               </li>
               <li class="nav__item">
-                <a href="#gallery03"
-                  ><span class="nav__item__opt u-text-small">Gallery</span
-                  >03</a
-                >
+                <a href="#website02"><span class="nav__item__opt u-text-small">Website</span>02</a>
               </li>
               <li class="nav__item">
-                <a href="#gallery04"><span class="nav__item__opt u-text-small">Gallery</span
-                  >04</a
-                >
+                <a href="#website03"><span class="nav__item__opt u-text-small">Website</span>03</a>
+              </li>
+              <li class="nav__item">
+                <a href="#website04"><span class="nav__item__opt u-text-small">Website</span>04</a>
               </li>
             </ul>
           </nav>
         </div>
         <div class="header__end">
-        <p class="button button__small">
+          <p class="button button__small">
             <a href="https://bit.ly/3ooJE5V">
-            <span class="u-pconly">Design</span>
-            <span class="u-sponly material-icons-sharp"> brush </span>
-          </a>
-        </p>
-        <p class="button button__small">
-          <a href="https://bit.ly/3pcLAOm">
-          <span class="u-pconly">Illustrations</span>
-          <span class="u-sponly material-icons-sharp"> palette</span>
-        </a>
-      </p>
-
+              <span class="u-pconly">Design</span>
+              <span class="u-sponly material-icons-sharp"> brush </span>
+            </a>
+          </p>
+          <p class="button button__small">
+            <a href="https://bit.ly/3pcLAOm">
+              <span class="u-pconly">Illustrations</span>
+              <span class="u-sponly material-icons-sharp"> palette</span>
+            </a>
+          </p>
         </div>
-
       </div>
     </header>
 
     <!-- Header End -->
     <main>
       <!-- kv Start -->
-      <section class="kv  bg__skew">
+      <section class="kv kv__skew--bottom">
         <div id="particles-js"></div>
         <div id="particles-js__wrapper" x>
-        <div class="kv__illustration">
-          <img src="image/img_bunny.png" alt="bunny Illustration" />
+          <div class="kv__illustration">
+            <img src="image/img_bunny.png" alt="bunny Illustration" />
+          </div>
+          <p class="kv__copy__sub">Web Designer / Developer / llustrator</p>
+          <h2 class="kv__copy__main">Manami Watanabe</h2>
+          <p class="kv__copy__text">
+            Versatile designer who has 7 years’ experience in advertising field. <br />
+            This page below is for showcasing my development skill. <br />
+            To see Web & Graphic Design / Illustrations Portfolios, <br />
+            please click the buttons on the nav ;)
+          </p>
+          <span class="kv__scroll">SCROLL</span>
         </div>
-        <p class="kv__copy__sub">Web Designer / Developer / llustrator</p>
-        <h2 class="kv__copy__main">Manami Watanabe</h2>
-        <p class="kv__copy__text">
-          Versatile designer who has 7 years’ experience in advertising field. <br>
-          This page below is for showcasing my Web development skill. <br>
-          To see Web & Graphic Design / Illustrations Portfolios, <br>
-          please click the buttons on the nav ;)
-        </p>
-        <span class="kv__scroll">SCROLL</span>
-      </div>
       </section>
       <!-- kv End -->
 
+      <!-- web app start -->
+      <section class="l-section app bg__skew--bottom" id="app">
+        <h3 class="heading-third u-center">React × Type script</h3>
+        <h2 class="heading-primary u-center app__title">Web app</h2>
+
+        <div class="l-inner l-inner--sm app__wrapper">
+          <div class="app__contents">
+            <p class="app__image scrollshow-m">
+              <a href="https://deft-duckanoo-c9385a.netlify.app/"><img src="image/img_app1_phone.png" alt="To do list app" /></a>
+            </p>
+
+            <div class="app__explanation">
+              <h3 class="heading-secondary app__eachtitle">To do list</h3>
+              <p class="app__text">To do list app is able to edit and delete each memo. Styled by Material UI.</p>
+            </div>
+          </div>
+          <div class="app__contents">
+            <p class="app__image scrollshow-m">
+              <a
+                href="https://resplendent-meringue-dc2f1e.netlify.app/"><img src="image/img_app2_phone.png" alt="Weather forecast"
+              /></a>
+            </p>
+
+            <div class="app__explanation">
+              <h3 class="heading-secondary app__eachtitle">Weather</h3>
+              <p class="app__text">Shows 5 days weather forecast.Uses OpenWeather API and styled by SCSS.</p>
+            </div>
+          </div>
+          <div class="app__contents">
+            <p class="app__image scrollshow-m">
+              <a href="https://master--relaxed-liger-7b1be6.netlify.app/"><img src="image/img_app3_phone.png" alt="Recipe app" /></a>
+            </p>
+
+            <div class="app__explanation">
+              <h3 class="heading-secondary app__eachtitle">Recipe</h3>
+              <p class="app__text">Able to check recipes by keyword & buttons.Uses spoonacular API and React router to switch.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- web app end -->
+
       <!-- 01 start -->
-      <section class="portfolio l-section " id="gallery01">
+      <section class="portfolio l-section" id="website01">
         <div class="l-inner l-inner--sm portfolio__wrapper">
           <div class="portfolio__contents scrollshow-s">
             <h3 class="heading-third">HTML / CSS / PHP / Javascript</h3>
-            <h2 class="heading-primary portfolio__title portfolio__title--01">Gallery</h2>
-            <p class="portfolio__text ">
-              Created an original Wordpress theme from scratch.<br>
+            <h2 class="heading-primary portfolio__title portfolio__title--01">Website</h2>
+            <p class="portfolio__text">
+              Created an original Wordpress theme from scratch.<br />
               Using Custom Post Type, added an extra posts area.
             </p>
-            <p class=" button button__middle"><a href="https://wp387150.wpx.jp/portfolio1/"><span>See More</span></a></p>
+            <p class="button button__middle">
+              <a href="https://wp387150.wpx.jp/portfolio1/"><span>See More</span></a>
+            </p>
           </div>
-          <div class="portfolio__image  scrollshow-m">
+          <div class="portfolio__image scrollshow-m">
             <img src="image/img_companyweb.jpg" alt="company website" />
           </div>
         </div>
@@ -120,17 +151,19 @@
       <!-- 01 end -->
 
       <!-- 02 start -->
-      <section class="portfolio portfolio--even l-section l-section--even bg__skew bg__skew--top" id="gallery02">
+      <section class="portfolio portfolio--even l-section l-section--even bg__skew--bottom bg__skew--top" id="website02">
         <div class="l-inner l-inner--sm portfolio__wrapper portfolio__wrapper--even">
           <div class="portfolio__contents scrollshow-s">
             <h3 class="heading-third">HTML / CSS / PHP</h3>
-            <h2 class="heading-primary heading-primary--even portfolio__title portfolio__title--02">Gallery</h2>
+            <h2 class="heading-primary heading-primary--even portfolio__title portfolio__title--02">Website</h2>
             <p class="portfolio__text">
-              My website for illustration and blog of daily output.<br>
-              Customised Kadence theme by optimising CSS and function.php<br>
-              Score of 95 (mobile) on PageSpeed Insights by Google
+              My website for illustration and blog of daily output.<br />
+              Customised Kadence theme by optimising CSS and function.php .<br />
+              Score of 94 (mobile) on PageSpeed Insights by Google.
             </p>
-            <p class="button button__middle button__middle--even"><a href="https://manamiw.com/"><span>See More</span></a></p>
+            <p class="button button__middle button__middle--even">
+              <a href="https://manamiw.com/"><span>See More</span></a>
+            </p>
           </div>
           <div class="portfolio__image scrollshow-m">
             <img src="image/img_mwdesign.jpg" alt="manami's website" />
@@ -139,73 +172,74 @@
       </section>
       <!-- 02 end -->
 
-
       <!-- 03 start -->
-      <section class="portfolio l-section " id="gallery03">
+      <section class="portfolio l-section" id="website03">
         <div class="l-inner l-inner--sm portfolio__wrapper">
           <div class="portfolio__contents scrollshow-s">
             <h3 class="heading-third">HTML / CSS / PHP / Javascript</h3>
-            <h2 class="heading-primary portfolio__title portfolio__title--03">Gallery</h2>
+            <h2 class="heading-primary portfolio__title portfolio__title--03">Website</h2>
             <p class="portfolio__text">
-              Created a Wordpress theme by Underscores Blanktheme. <br>
-              Using advanced custom field, enables user to change the prices area easier. <br>
-              Added a contact form  by using contact form7.
+              Created a Wordpress theme by Underscores Blanktheme. <br />
+              Using advanced custom field, enables user to change the prices area easier. <br />
+              Added a contact form by using contact form7.
             </p>
-            <p class="button button__middle"><a href="https://wp387150.wpx.jp/portfolio3/"><span>See More</span></a></p>
+            <p class="button button__middle">
+              <a href="https://wp387150.wpx.jp/portfolio3/"><span>See More</span></a>
+            </p>
           </div>
 
           <div class="portfolio__image scrollshow-m">
-            <img src="image/img_marketingweb.jpg" alt="landing page website" >
+            <img src="image/img_marketingweb.jpg" alt="landing page website" />
           </div>
-
         </div>
       </section>
       <!-- 03 end -->
 
       <!-- 04 start -->
 
-      <section class="portfolio portfolio--even l-section l-section--even bg__skew--top" id="gallery04">
+      <section class="portfolio portfolio--even l-section l-section--even bg__skew--top" id="website04">
         <div class="l-inner l-inner--sm portfolio__wrapper portfolio__wrapper--even">
           <div class="portfolio__contents scrollshow-s">
-
             <h3 class="heading-third">HTML / CSS / Javascript</h3>
-            <h2 class="heading-primary heading-primary--even portfolio__title portfolio__title--04">Gallery</h2>
+            <h2 class="heading-primary heading-primary--even portfolio__title portfolio__title--04">Website</h2>
             <p class="portfolio__text">
-              Statistic website. <br>
-              Added a contact form  by using formspree.
+              Statistic website. <br />
+              Added a contact form by using formspree.
             </p>
-            <p class="button button__middle button__middle--even"><a href="https://wp387150.wpx.jp/portfolio4/index.html"><span>See More</span></a></p>
-
+            <p class="button button__middle button__middle--even">
+              <a href="https://wp387150.wpx.jp/portfolio4/index.html"><span>See More</span></a>
+            </p>
           </div>
           <div class="portfolio__image scrollshow-m">
             <img src="image/img_digsmile.jpg" alt="Digsmile website" />
           </div>
-
         </div>
       </section>
       <!-- 04 end -->
 
       <!-- other portfolios -->
-<section class="others l-section l-section--big bg__triangle">
-  <div class="bg__triangle__shape">
-    <svg data-name="Layer 1" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
-    </svg>
-  </div>
-  <div class="l-inner l-inner--sm scrollshow-bottom">
-  <h2 class="heading-secondary">Other Portfolios</h2>
-  <div class="others__button">
-    <p class="button button__big button__big--design" ><a href="https://bit.ly/3ooJE5V">
-      <span>Design</span>
-    </a></p>
-    <p class="button button__big button__big--illustrations" ><a href="https://bit.ly/3pcLAOm">
-      <span>Illustrations</span>
-    </a></p>
-
-
-  </div>
-  </div>
-</section>
+      <section class="others l-section l-section--big bg__triangle">
+        <div class="bg__triangle__shape">
+          <svg data-name="Layer 1" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+          </svg>
+        </div>
+        <div class="l-inner l-inner--sm scrollshow-bottom">
+          <h2 class="heading-secondary">Other Portfolios</h2>
+          <div class="others__button">
+            <p class="button button__big button__big--design">
+              <a href="https://bit.ly/3ooJE5V">
+                <span>Design</span>
+              </a>
+            </p>
+            <p class="button button__big button__big--illustrations">
+              <a href="https://bit.ly/3pcLAOm">
+                <span>Illustrations</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>

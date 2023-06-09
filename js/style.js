@@ -14,12 +14,11 @@ navToggle.addEventListener("click", function () {
   }
 });
 
-
-//Scroll-nav
-   window.addEventListener("scroll", function() {
-    var header = document.querySelector("header");
-    header.classList.toggle("scroll-nav", window.scrollY > 0);
-  });
+//Scroll-nav (adjust global nav looking)
+window.addEventListener("scroll", function() {
+  var header = document.querySelector("header");
+  header.classList.toggle("scroll-nav", window.scrollY > 0);
+});
 
 
 //particle-js
@@ -96,7 +95,8 @@ navToggle.addEventListener("click", function () {
 
 
 
-//fade-in
+/*
+//fade-in　
 let fadeInTarget = document.querySelectorAll('.fade-in');
 window.addEventListener('scroll', () => {
   for (let i = 0; i < fadeInTarget.length; i++){
@@ -109,6 +109,9 @@ window.addEventListener('scroll', () => {
     }
   }
 });
+*/
+
+//ScrollReveal
 ScrollReveal({ distance: '100px' });
 ScrollReveal().reveal('.scrollshow-s', { delay: 600,reset: true });
 ScrollReveal().reveal('.scrollshow-m', { delay: 800,reset: true  });
