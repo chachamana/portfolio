@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <meta name="description" content="Website gallery-developement" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/reset.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sacramento&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="header header-sub scroll-nav" id="header">
+      <div class="l-inner header__wrapper">
+        <h1 class="header__start">
+          <a href="./index.html" class="title title--subpage"
+            >Portfolio
+            <!-- <span class="title__sub">-development</span>-->
+          </a>
+        </h1>
+        <div class="header__middle">
+          <nav class="nav">
+            <button class="nav__toggle" aria-expanded="false" type="button">
+              <span class="nav__toggle__area">
+                <span class="nav__toggle__icon"></span>
+                <span class="nav__toggle__icon"></span>
+                <span class="nav__toggle__icon"></span>
+              </span>
+            </button>
+            <ul class="nav__wrapper">
+              <li class="nav__item nav__item--subpage">
+                <a href="./detail-tapnow.html"><span class="nav__item__opt u-text-small">Project</span>01</a>
+              </li>
+              <li class="nav__item nav__item--subpage">
+                <a href="./detail-artfinder.html"><span class="nav__item__opt u-text-small">Project</span>02</a>
+              </li>
+              <li class="nav__item nav__item--subpage">
+                <a href="./detail-imacrea.html"><span class="nav__item__opt u-text-small">Project</span>03</a>
+              </li>
+              <li class="nav__item nav__item--subpage">
+                <a href="./index.html#app"><span class="nav__item__opt u-text-small">Development</span>01-03</a>
+              </li>
+              <!--  <li class="nav__item">
+                <a href="#website04"><span class="nav__item__opt u-text-small">Website</span>04</a>
+              </li>-->
+            </ul>
+          </nav>
+        </div>
+        <div class="header__end">
+          <p class="button button__small">
+            <a href="https://bit.ly/3ooJE5V">
+              <span class="u-pconly">Design</span>
+              <span class="u-sponly material-icons-sharp"> brush </span>
+            </a>
+          </p>
+          <p class="button button__small">
+            <a href="https://bit.ly/3pcLAOm">
+              <span class="u-pconly">Illustration</span>
+              <span class="u-sponly material-icons-sharp"> palette</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <main>
+      <!-- kv Start -->
+      <section class="kv kv__subpage kv__subpage--artfinder kv__skew--bottom"></section>
+      <!-- sub page title -->
+      <section class="l-section">
+        <div class="l-inner">
+          <p class="kv__copy__sub u-color-third u-center">UX/UI Design, Case Study</p>
+          <h2 class="kv__copy__main u-color-secondary u-center mb-2">Art Finder</h2>
+          <p class="u-center mb-2">
+            An app to efficiently deliver information about art events and exhibitions, <br class="u-pconly" />
+            facilitating a smooth support process <br class="u-pconly" />from discovering events of interest to actually attending them.
+          </p>
+          <p class="button button__middle mg-auto">
+            <a href="https://www.figma.com/proto/hfe0s6Fpnulk1XATVr66mw/Added-Like?page-id=0%3A1&type=design&node-id=2090-8097&viewport=1627%2C-350%2C0.07&t=XP7BupmCyuMtMhOm-1&scaling=scale-down&starting-point-node-id=2090%3A8097&mode=design"><span>Prototype</span></a>
+          </p>
+        </div>
+      </section>
+      <!-- kv End -->
+
+      <!-- 01:Background & Target start -->
+      <section class="l-section">
+        <div class="l-inner l-inner--sm portfolio__wrapper">
+          <div class="flex-50 scrollshow-s">
+            <h3 class="heading-third u-color-secondary mb-2 heading__num heading__num--01 heading__num--small">Background</h3>
+            <p class="mb-2">The goal is to empower users to efficiently and regularly access information about art. <br />The primary targets are:</p>
+            <ul class="list mb-2 u-text-small">
+              <li>Due to weekday work, those who primarily desire to attend weekend events.</li>
+              <li>Professionals such as designers, who frequently use PCs and prefer physical events over online ones during the weekends.</li>
+              <li>Individuals with specific genre interests, but are also open to new and recommended experiences.</li>
+            </ul>
+          </div>
+          <figure class="img-50 flex-50 scrollshow-m">
+            <img src="image/img_Artfinder__1background.jpg" alt="former design problem" />
+            <figcaption>Target persona and Lean Canvas</figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- 01:Background & Target end -->
+
+      <!-- 02:Research start -->
+      <section class="l-section l-section--even bg__color bg__skew--bottom bg__skew--top">
+        <div class="l-inner l-inner--sm portfolio__wrapper flex-column">
+          <div class="flex-100 scrollshow-s u-pccenter">
+            <h3 class="heading-third u-color-secondary mb-2 heading__num heading__num--02 heading__num--small">Research</h3>
+            <p class="mb-2">
+              Conducted a survey on existing competing apps,<br class="u-pconly" />
+              extracting the positive aspects and points of concern for each. <br class="u-pconly" />
+              From this analysis, obtained the following insights:
+            </p>
+            <ul class="l-inner--xs list mb-2 u-text-small u-left">
+              <li>Users prefer local information over international or city-based details.</li>
+              <li>A single, well-categorised filter per screen streamlines event searches.</li>
+              <li>
+                The following elements could be factors for making a decision to attend: <br />
+                appealing images, the events access, duration, and popularity.
+              </li>
+              <li>Some users would prefer an easy way to browse specific art genres.</li>
+              <li>It might be convenient to connect to users phone's Calendar function.</li>
+              <li>The save events function should be easy to use.</li>
+              <li>A simple colour tone may clash less with the art event images.</li>
+            </ul>
+          </div>
+
+          <figure class="img-100 flex-100 scrollshow-m">
+            <img src="image/img_Artfinder__2research.jpg" alt="research" />
+            <figcaption>Research competitors</figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- 02:Research end -->
+
+      <!-- 03:UserInterview start -->
+      <section class="l-section">
+        <div class="l-inner l-inner--sm portfolio__wrapper">
+          <div class="flex-50 scrollshow-s">
+            <h3 class="heading-third u-color-secondary mb-2 heading__num heading__num--03 heading__num--small">User Interview</h3>
+            <p class="mb-2">
+              Conducted user interviews with 5 individuals to delve into insights.<br />
+              From these interviews, discovered:
+            </p>
+            <ul class="list mb-2 u-text-small">
+              <li>Users generally prefer events that are closer in proximity.</li>
+              <li>Many users tend to use mapping applications like Google Maps when planning to attend an event.</li>
+              <li>Additional decision-making factors include the popularity of the event and whether it features a favourite artist.</li>
+              <li>The use of genre categorisation varies among users.</li>
+              <li>A lot of users utilise the app's calendar function.</li>
+            </ul>
+          </div>
+          <figure class="img-50 flex-50 scrollshow-m">
+            <img src="image/img_Artfinder__3userinterview.jpg" alt="userinterview" />
+            <figcaption>User Interview</figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- 03:UserInterview end -->
+
+      <!-- 04:User Journey /Wireframe start -->
+      <section class="l-section l-section--even bg__color bg__skew--bottom bg__skew--top">
+        <div class="l-inner l-inner--sm portfolio__wrapper flex-column">
+          <div class="flex-100 scrollshow-s u-pccenter">
+            <h3 class="heading-third u-color-secondary mb-2 heading__num heading__num--04 heading__num--small">User Journey / Wireframes</h3>
+            <p class="mb-2">
+              Created the user journey and wireframes for the app. <br class="u-pconly" />
+              With specific considerations based on the interview results:
+            </p>
+
+            <ul class="l-inner--xs list mb-2 u-text-small u-left">
+              <li>Default setting displays nearby events, enabling users to refine preferences.</li>
+              <li>Users can search events based on their current location using a map display.</li>
+              <li>Home screen prominently features popular, recommended, and latest information.</li>
+              <li>Follow favourite galleries and artists for real-time updates.</li>
+              <li>Save interesting events for easy access and view locations seamlessly on maps.</li>
+              <li>Calendar sync for added convenience.</li>
+            </ul>
+          </div>
+          <div class="flex gap-3 image-50-2">
+            <figure class="img-50 flex-50 scrollshow-m">
+              <img src="image/img_Artfinder__4userjourney.jpg" alt="user journey" />
+              <figcaption>User Journey</figcaption>
+            </figure>
+            <figure class="img-50 flex-50 scrollshow-m">
+              <img src="image/img_Artfinder__4wireframe.jpg" alt="Wireframes" />
+              <figcaption>Wireframes</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- 04:User Journey /Wireframe end -->
+
+      <!-- *****************************************************************************************-->
+
+
+
+      <!-- 05:Prototype start -->
+      <section class="l-section prototype">
+        <div class="l-inner l-inner--sm portfolio__wrapper">
+          <div class="flex-50 scrollshow-s">
+            <h3 class="heading-third u-color-secondary mb-2 heading__num heading__num--05 heading__num--small">Prototype</h3>
+            <p class="mb-2">
+              Designed fundamental aspects of the app such as fonts and colours. <br>
+              Ensured buttons are prominent while maintaining a simple,
+              white-based design that complements various art images effectively.
+            </p>
+
+          </div>
+          <figure class="img-50 flex-50 scrollshow-m">
+            <img src="image/img_Artfinder__5setting.jpg" alt="Design Setting" />
+            <figcaption>Design Setting</figcaption>
+          </figure>
+        </div>
+        <div class="l-inner l-inner--sm">
+        <figure class="img-100 flex-100 scrollshow-m">
+          <img src="image/img_Artfinder__5prototype.jpg" alt="prototype" />
+          <figcaption>Prototype</figcaption>
+        </figure>
+      </div>
+      </section>
+      <!-- 05:Prototype end -->
+
+
+
+      <!-- 06:Usability Test start -->
+      <section class="l-section l-section--even bg__color bg__skew--bottom bg__skew--top">
+        <div class="l-inner l-inner--sm portfolio__wrapper portfolio__wrapper--even">
+          <div class="flex-50 scrollshow-s">
+            <h3 class="heading-third u-color-secondary mb-2 heading__num heading__num--06 heading__num--small">Usability Test</h3>
+            <p class="mb-2">
+              Conducted usability tests with 5 individuals  to evaluate the user journey from discovering an event to saving it and checking its access.(using Maze)<br>
+Participants also provided a 5-point rating on factors such as colour and layout visibility.<br>
+Despite some non-functional search features due to prototype, the overall feedback received was highly positive.
+            </p>
+          </div>
+          <figure class="img-50 flex-50 scrollshow-m">
+            <img src="image/img_Artfinder__6test.jpg" alt="research" />
+            <figcaption>Usability Test (Partial)</figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- 06:Usability Test end -->
+
+    </main>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/style.js"></script>
+  </body>
+</html>
