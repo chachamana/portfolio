@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/reset.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sacramento&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <!-- Header Start -->
     <header class="header" id="header">
@@ -45,7 +46,17 @@
                 <a href="./index.html#app"><span class="nav__item__opt u-text-small">Development</span>01-03</a>
               </li>
               <li class="nav__item">
-                <a href="./index.html#pdfs"><span class="nav__item__opt u-text-small">PDF</span>01-02</a>
+                <a href="./aboutme.html"><span class="nav__item__opt u-text-small">Profile</span>
+                  <span class="material-icons-sharp size-20">
+                    person
+                    </span></a>
+              </li>
+              <li class="nav__item">
+                <a href="./index.html#pdfs"
+                  ><span class="nav__item__opt u-text-small">PDF</span>
+                  <span class="material-icons-sharp size-20">
+                    description
+                    </span></a>
               </li>
             </ul>
           </nav>
@@ -54,19 +65,21 @@
           <p class="button button__small">
             <a href="./index.html#contactform">
               <span class="u-pconly">Contact</span>
-              <span class="u-sponly material-icons-sharp"> mail </span>
+              <span class="u-sponly material-icons-sharp">
+                mail
+                </span>
             </a>
           </p>
           <!--    <p class="button button__small">
             <a href="https://bit.ly/3ooJE5V">
               <span class="u-pconly">Design</span>
-              <span class="u-sponly material-icons-sharp"> brush </span>
+              <span class="u-sponly material-symbols-outlined"> brush </span>
             </a>
           </p>
           <p class="button button__small">
             <a href="https://bit.ly/3pcLAOm">
               <span class="u-pconly">Illustration</span>
-              <span class="u-sponly material-icons-sharp"> palette</span>
+              <span class="u-sponly material-symbols-outlined"> palette</span>
             </a>
           </p>
           -->
@@ -83,9 +96,9 @@
             <img src="image/img_bunny.png" alt="bunny Illustration" />
           </div>
           <p class="kv__copy__sub u-color-third mb-1">UX/UI Design, Development, Illustration</p>
-          <h2 class="kv__copy__main mb-2 u-color-primary">Manami Watanabe</h2>
+          <h2 class="kv__copy__main mb-2 u-color-primary">Manami.W</h2>
           <p class="kv__copy__text u-white">
-            Seasoned designer with 8+ years of hands-on experience in advertising. <br class="u-pconly" />
+            Seasoned designer with 9+ years of hands-on experience in advertising. <br class="u-pconly" />
             I've refined my skills through practical exposure and amplified my expertise <br class="u-pconly" />
             with a UX bootcamp certification from The School of UX.<br />
             My unique strength lies in bridging the gap between design and development.<br class="u-pconly" />
@@ -154,6 +167,7 @@
 
       <!-- web app(Development) start -->
       <section class="l-section bg__color bg__skew--bottom app" id="app">
+        0.
         <h3 class="heading-sub u-color-third u-center mb-1">React × Type script</h3>
         <h2 class="heading-primary u-color-secondary u-center mb-3">Development</h2>
 
@@ -252,20 +266,20 @@
       <!-- contat form -->
       <section class="l-section u-bg-secondary" id="contactform">
         <div class="l-inner l-inner--xxs">
-        <form action="https://formspree.io/f/xdoqkrjq" method="POST">
-          <label class="mb-2">
-           <p class="form__label u-white mb-1">Your email</p>
-            <input type="email" name="email" required/>
-          </label>
-          <label class="mb-3">
-            <p class="form__label u-white mb-1">Your message</p>
-            <textarea name="message" required></textarea>
-          </label>
-          <div class="u-center">
-            <button type="submit" class=" button button__big">Send</button>
-          </div>
-        </form>
-      </div>
+          <form action="https://formspree.io/f/xdoqkrjq" method="POST">
+            <label class="mb-2">
+              <p class="form__label u-white mb-1">Your email</p>
+              <input type="email" name="email" required />
+            </label>
+            <label class="mb-3">
+              <p class="form__label u-white mb-1">Your message</p>
+              <textarea name="message" required></textarea>
+            </label>
+            <div class="u-center">
+              <button type="submit" class="button button__big">Send</button>
+            </div>
+          </form>
+        </div>
       </section>
       <!-- contat form end-->
     </main>
