@@ -177,6 +177,9 @@ Fontsize-setting
 .heading__num--06::after {
   content: "06";
 }
+.heading__num--07::after {
+  content: "07";
+}
 
 /* figcaption
 ----------------------- */
@@ -762,7 +765,7 @@ Footer
   list-style-type: none !important; /*数字を一旦消す*/
   padding: 1em;
   border-radius: 10px;
-  background: #f8fbff;
+  background: #ecf2f9;
 }
 .list li {
   position: relative;
@@ -1187,11 +1190,6 @@ Footer
 ----------------------- */
 .app {
   padding-bottom: 85px;
-  /* &__explanation{
-     display: flex;
-     flex-direction: column;
-     flex: 1;
-   }*/
 }
 .app__wrapper {
   display: flex;
@@ -1216,6 +1214,14 @@ Footer
   .app__contents:last-of-type {
     margin-bottom: 50px;
   }
+}
+.app__explanation {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.app__text {
+  flex-grow: 1;
 }
 @media screen and (max-width: 768px) {
   .app__text {
@@ -1481,6 +1487,9 @@ Subpage (profile)
     text-align: left;
   }
 }
+.profile__sentence p:not(:last-child) {
+  margin-bottom: 20px;
+}
 .profile__icon {
   color: #6E7189;
 }
@@ -1498,10 +1507,10 @@ Subpage (profile)
   border: 1px solid #e6e4e4;
   padding: 1.5rem;
   text-align: left;
+  vertical-align: middle;
   font-size: clamp(1.4rem, 1.4rem + 0.2 * (100vw - 37.5rem) / 39.3, 1.6rem);
 }
 .profile th {
   background-color: #f5f5f5;
   text-align: center;
-  vertical-align: middle;
 }/*# sourceMappingURL=style.css.map */
