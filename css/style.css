@@ -109,7 +109,7 @@ Fontsize-setting
 .kv__copy__text {
   padding: 0 10px;
   text-align: center;
-  text-shadow: 0px 0px 6px #193660;
+  text-shadow: 0px 0px 6px #6E7189;
 }
 
 /* heading font-setting
@@ -280,12 +280,20 @@ Utilities
 
 /* bg-color
 ----------------------- */
+.u-bg-themecolor {
+  background-color: #193660;
+}
+
 .u-bg-primary {
-  background-color: #ffa1ae;
+  background-color: #FFF8F9;
 }
 
 .u-bg-secondary {
-  background-color: #193660;
+  background-color: #f1f8fc;
+}
+
+.u-bg-gray {
+  background-color: #f5f5f5;
 }
 
 /* ===============================================
@@ -765,7 +773,7 @@ Footer
   list-style-type: none !important; /*数字を一旦消す*/
   padding: 1em;
   border-radius: 10px;
-  background: #ecf2f9;
+  background: #f1f8fc;
 }
 .list li {
   position: relative;

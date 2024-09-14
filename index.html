@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/reset.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp&display=swap" rel="stylesheet" />
 
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sacramento&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -43,20 +43,17 @@
                 <a href="./detail-imacrea.html"><span class="nav__item__opt u-text-small">Project</span>03</a>
               </li>
               <li class="nav__item">
-                <a href="./index.html#app"><span class="nav__item__opt u-text-small">Development</span>01-03</a>
-              </li>
-              <li class="nav__item">
-                <a href="./aboutme.html"><span class="nav__item__opt u-text-small">Profile</span>
-                  <span class="material-icons-sharp size-20">
-                    person
-                    </span></a>
-              </li>
-              <li class="nav__item">
                 <a href="./index.html#pdfs"
-                  ><span class="nav__item__opt u-text-small">PDF</span>
-                  <span class="material-icons-sharp size-20">
-                    description
-                    </span></a>
+                  ><span class="nav__item__opt u-text-small">PDF</span> <span class="material-icons-sharp size-20"> description </span></a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="./aboutme.html"
+                  ><span class="nav__item__opt u-text-small">Profile</span> <span class="material-icons-sharp size-20"> person </span></a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="./index.html#app"><span class="nav__item__opt u-text-small">Development</span>01-03</a>
               </li>
             </ul>
           </nav>
@@ -65,9 +62,7 @@
           <p class="button button__small">
             <a href="./index.html#contactform">
               <span class="u-pconly">Contact</span>
-              <span class="u-sponly material-icons-sharp">
-                mail
-                </span>
+              <span class="u-sponly material-icons-sharp"> mail </span>
             </a>
           </p>
           <!--    <p class="button button__small">
@@ -165,8 +160,48 @@
       </section>
       <!-- 03 end -->
 
+      <!-- portfolio files -->
+      <section class="l-section l-section--even u-bg-secondary bg__skew--bottom bg__skew--top" id="pdfs">
+        <div class="l-inner l-inner--sm portfolio__wrapper mb-7">
+          <div class="flex-50 scrollshow-s">
+            <h2 class="heading-primary u-color-secondary mb-2">Design</h2>
+            <p class="mb-2">Showcases of UX/UI design, Website design,<br />Branding and Graphic design.</p>
+            <p class="button button__big button__big--design">
+              <a href="https://bit.ly/3ooJE5V">
+                <span>PDF File</span>
+              </a>
+            </p>
+          </div>
+          <div class="img-50 flex-50 scrollshow-m">
+            <figure>
+              <img src="image/img_portfolio__design.jpg" alt="design portfolio" />
+              <figcaption>Examples</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="l-inner l-inner--sm portfolio__wrapper portfolio__wrapper--even">
+          <div class="flex-50 scrollshow-s">
+            <h2 class="heading-primary u-color-secondary mb-2">Illustration</h2>
+            <p class="mb-2">Showcases of Hand-drawn and Digital Illustrations.</p>
+            <p class="button button__big button__big--illustrations">
+              <a href="https://bit.ly/3pcLAOm">
+                <span>PDF File</span>
+              </a>
+            </p>
+          </div>
+          <div class="img-50 flex-50 scrollshow-m">
+            <figure>
+              <img src="image/img_portfolio__illustration.jpg" alt="Illustration portfolio" />
+              <figcaption>Examples</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- portfolio files End-->
+
       <!-- web app(Development) start -->
-      <section class="l-section bg__color bg__skew--bottom app" id="app">
+      <section class="l-section app" id="app">
         <h3 class="heading-sub u-color-third u-center mb-1">React × Type script</h3>
         <h2 class="heading-primary u-color-secondary u-center mb-3">Development</h2>
 
@@ -214,55 +249,8 @@
       </section>
       <!-- web app(Development) end -->
 
-      <!-- portfolio files -->
-      <section class="l-section" id="pdfs">
-        <!--  <div class="bg__triangle__shape">
-           <svg data-name="Layer 1" viewBox="0 0 1200 120" preserveAspectRatio="none">
-             <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
-           </svg>
-   </div> -->
-
-
-        <div class="l-inner l-inner--sm portfolio__wrapper mb-7">
-          <div class="flex-50 scrollshow-s">
-            <h2 class="heading-primary u-color-secondary mb-2">Design</h2>
-            <p class="mb-2">Showcases of UX/UI design, Website design,<br />Branding and Graphic design.</p>
-            <p class="button button__big button__big--design">
-              <a href="https://bit.ly/3ooJE5V">
-                <span>PDF File</span>
-              </a>
-            </p>
-          </div>
-          <div class="img-50 flex-50 scrollshow-m">
-            <figure>
-              <img src="image/img_portfolio__design.jpg" alt="design portfolio" />
-              <figcaption>Examples</figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <div class="l-inner l-inner--sm portfolio__wrapper portfolio__wrapper--even">
-          <div class="flex-50 scrollshow-s">
-            <h2 class="heading-primary u-color-secondary mb-2">Illustration</h2>
-            <p class="mb-2">Showcases of Hand-drawn and Digital Illustrations.</p>
-            <p class="button button__big button__big--illustrations">
-              <a href="https://bit.ly/3pcLAOm">
-                <span>PDF File</span>
-              </a>
-            </p>
-          </div>
-          <div class="img-50 flex-50 scrollshow-m">
-            <figure>
-              <img src="image/img_portfolio__illustration.jpg" alt="Illustration portfolio" />
-              <figcaption>Examples</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-      <!-- portfolio files End-->
-
       <!-- contat form -->
-      <section class="l-section u-bg-secondary" id="contactform">
+      <section class="l-section u-bg-themecolor" id="contactform">
         <div class="l-inner l-inner--xxs">
           <form action="https://formspree.io/f/xdoqkrjq" method="POST">
             <label class="mb-2">
