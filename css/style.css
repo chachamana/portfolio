@@ -4,17 +4,17 @@ Base setting
 =============================================== */
 html {
   font-family: "Roboto", YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
-  font-size: 62.5%;
-  color: #6E7189;
+  color: #4d4e57;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px; /* 1rem = 16px */
 }
 
 body { /* basic size 16px */
   line-height: 1.5;
   letter-spacing: 0.05em;
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 
 a {
@@ -74,7 +74,7 @@ Fontsize-setting
   font-weight: bold;
   line-height: 1.2;
   color: #ffa1ae;
-  font-size: clamp(2.4rem, 2.4rem + 0.4 * (100vw - 37.5rem) / 39.3, 2.8rem);
+  font-size: clamp(1.5rem, 1.3964088398rem + 0.4419889503vw, 1.75rem);
 }
 @media screen and (max-width: 768px) {
   .title {
@@ -84,7 +84,7 @@ Fontsize-setting
 .title > span {
   display: block;
   font-weight: 500;
-  font-size: clamp(1.6rem, 1.6rem + 0.4 * (100vw - 37.5rem) / 39.3, 2rem);
+  font-size: clamp(1rem, 0.8964088398rem + 0.4419889503vw, 1.25rem);
 }
 .title--subpage {
   color: #193660;
@@ -95,7 +95,7 @@ Fontsize-setting
 .kv__copy__main {
   font-weight: 700;
   line-height: 1.1;
-  font-size: clamp(6rem, 6rem + 1.2 * (100vw - 37.5rem) / 39.3, 7.2rem);
+  font-size: clamp(3.75rem, 3.4392265193rem + 1.3259668508vw, 4.5rem);
 }
 @media screen and (max-width: 768px) {
   .kv__copy__main {
@@ -103,41 +103,41 @@ Fontsize-setting
   }
 }
 .kv__copy__sub {
-  font-size: clamp(1.6rem, 1.6rem + 0.8 * (100vw - 37.5rem) / 39.3, 2.4rem);
+  font-size: clamp(1rem, 0.7928176796rem + 0.8839779006vw, 1.5rem);
   font-weight: 700;
 }
 .kv__copy__text {
   padding: 0 10px;
   text-align: center;
-  text-shadow: 0px 0px 6px #6E7189;
+  text-shadow: 0px 0px 6px #4d4e57;
 }
 
 /* heading font-setting
 ----------------------- */
 .heading-primary {
   font-weight: 700;
-  font-size: clamp(4rem, 4rem + 2.8 * (100vw - 37.5rem) / 39.3, 6.8rem);
+  font-size: clamp(2.5rem, 1.7748618785rem + 3.0939226519vw, 4.25rem);
   line-height: 1.1;
 }
 .heading-primary-subpage {
   font-weight: 700;
-  font-size: clamp(4rem, 4rem + 0.8 * (100vw - 37.5rem) / 39.3, 4.8rem);
+  font-size: clamp(2.5rem, 2.2928176796rem + 0.8839779006vw, 3rem);
   line-height: 1.1;
 }
 .heading-secondary {
   font-weight: 700;
   line-height: 1.1;
-  font-size: clamp(3.6rem, 3.6rem + 0.6 * (100vw - 37.5rem) / 39.3, 4.2rem);
+  font-size: clamp(2.25rem, 2.0946132597rem + 0.6629834254vw, 2.625rem);
 }
 .heading-sub {
   font-weight: 700;
   line-height: 1.1;
-  font-size: clamp(1.4rem, 1.4rem + 0.2 * (100vw - 37.5rem) / 39.3, 1.6rem);
+  font-size: clamp(0.875rem, 0.8232044199rem + 0.2209944751vw, 1rem);
 }
 .heading-third {
   font-weight: 700;
   line-height: 1.1;
-  font-size: clamp(2.8rem, 2.8rem + 0.8 * (100vw - 37.5rem) / 39.3, 3.6rem);
+  font-size: clamp(1.75rem, 1.5428176796rem + 0.8839779006vw, 2.25rem);
 }
 
 .heading__num {
@@ -151,7 +151,7 @@ Fontsize-setting
   top: -20%;
   z-index: -1;
   font-family: "Sacramento", cursive;
-  font-size: clamp(5rem, 5rem + 4 * (100vw - 37.5rem) / 39.3, 9rem);
+  font-size: clamp(3.125rem, 2.0890883978rem + 4.4198895028vw, 5.625rem);
   font-weight: 400;
   color: #e6e4e4;
 }
@@ -185,7 +185,7 @@ Fontsize-setting
 ----------------------- */
 figcaption {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 14px;
   padding-top: 5px;
 }
 
@@ -228,7 +228,7 @@ Utilities
 .u-sponly {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
   .u-sponly {
     display: block;
   }
@@ -250,7 +250,7 @@ Utilities
 .u-pconly {
   display: block;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
   .u-pconly {
     display: none;
   }
@@ -507,7 +507,7 @@ Layout  width-setting
 .header__wrapper {
   display: flex;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 10px 15px;
   justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
@@ -647,11 +647,11 @@ Footer
   padding: 1rem;
   width: 144px;
   text-align: center;
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
   color: white;
   background-color: #ffa1ae;
-  box-shadow: 0px 11.85px 26.3px rgba(51, 51, 51, 0.1);
+  box-shadow: 0px 12px 24px rgba(51, 51, 51, 0.1);
   border-radius: 100vh;
   overflow: hidden;
 }
@@ -659,7 +659,7 @@ Footer
   color: #193660;
   width: 120px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
   .button__small {
     display: flex;
     justify-content: center;
@@ -675,7 +675,7 @@ Footer
   max-width: 240px;
   width: 100%;
   font-weight: 700;
-  font-size: clamp(2rem, 2rem + 0.4 * (100vw - 37.5rem) / 39.3, 2.4rem);
+  font-size: clamp(1.25rem, 1.1464088398rem + 0.4419889503vw, 1.5rem);
   background-color: #ffa1ae;
   color: white;
 }
@@ -758,7 +758,7 @@ Footer
   text-align: center;
   width: 84px;
   background-color: #e6e4e4;
-  font-size: clamp(1.1rem, 1.1rem + 0.1 * (100vw - 60rem) / 16.8, 1.2rem);
+  font-size: clamp(0.6875rem, 0.6616022099rem + 0.1104972376vw, 0.75rem);
 }
 @media screen and (max-width: 768px) {
   .label-category {
@@ -874,7 +874,7 @@ Footer
 }
 .nav__item a {
   display: inline-block;
-  padding: 1rem 1.2rem;
+  padding: 10px 15px;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -1024,7 +1024,7 @@ Footer
   -ms-writing-mode: tb-rl;
   text-transform: uppercase;
   color: #8EAAD1;
-  font-size: 1.2rem;
+  font-size: 12px;
   writing-mode: vertical-lr;
 }
 @media screen and (max-width: 768px) {
@@ -1203,7 +1203,7 @@ Footer
   display: flex;
   gap: 30px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
   .app__wrapper {
     flex-direction: column;
   }
@@ -1213,7 +1213,7 @@ Footer
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
   .app__contents {
     margin-bottom: 20px;
     /*flex-direction: column-reverse;*/
@@ -1241,7 +1241,7 @@ Footer
   margin: 0 auto;
   margin-bottom: 30px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
   .app__image {
     width: 50%;
     max-width: 400px;
@@ -1349,7 +1349,7 @@ Footer
   align-items: center;
   margin: 0 auto;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
   .others__button {
     flex-direction: column;
   }
@@ -1432,7 +1432,7 @@ form select {
 .form__label {
   font-weight: 500;
   line-height: 1.1;
-  font-size: clamp(1.6rem, 1.6rem + 0.4 * (100vw - 37.5rem) / 39.3, 2rem);
+  font-size: clamp(1rem, 0.8964088398rem + 0.4419889503vw, 1.25rem);
 }
 
 form textarea {
@@ -1444,7 +1444,7 @@ form textarea {
   .form__label {
     font-weight: 500;
     line-height: 1.1;
-    font-size: clamp(1.6rem, 1.6rem + 0.4 * (100vw - 37.5rem) / 39.3, 2rem);
+    font-size: clamp(1rem, 0.8964088398rem + 0.4419889503vw, 1.25rem);
   }
   form textarea {
     min-height: 240px;
@@ -1499,7 +1499,7 @@ Subpage (profile)
   margin-bottom: 20px;
 }
 .profile__icon {
-  color: #6E7189;
+  color: #4d4e57;
 }
 
 .line {
@@ -1511,12 +1511,13 @@ Subpage (profile)
   border-collapse: collapse;
   background: white;
 }
-.profile th, .profile td {
+.profile th,
+.profile td {
   border: 1px solid #e6e4e4;
   padding: 1.5rem;
   text-align: left;
   vertical-align: middle;
-  font-size: clamp(1.4rem, 1.4rem + 0.2 * (100vw - 37.5rem) / 39.3, 1.6rem);
+  font-size: clamp(0.875rem, 0.8232044199rem + 0.2209944751vw, 1rem);
 }
 .profile th {
   background-color: #f5f5f5;
